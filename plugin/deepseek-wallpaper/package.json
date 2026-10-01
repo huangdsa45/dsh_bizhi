@@ -1,0 +1,31 @@
+{
+  "name": "@local/deepseek-wallpaper",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Animated 15s DeepSeek whale-girl wallpaper for the Harness Web UI, with focus-aware decode pausing.",
+  "meta": {
+    "title": "DeepSeek 动态壁纸",
+    "description": "把 15 秒鲸鱼娘动画循环播放为 Harness 界面壁纸，并提供两张拟人化形象静态壁纸。窗口失焦/隐藏时自动停止解码，几乎不影响正常使用。"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-settings-general"
+      ]
+    }
+  }
+}

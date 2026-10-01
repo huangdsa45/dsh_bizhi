@@ -1,0 +1,18 @@
+# 依赖与缓存（含 .work/skills/dsh 里 vendored 的 node_modules）
+node_modules/
+
+# 构建中间产物（.work/tools/build_assets.py 输出与调试图）
+.work/assets/
+.work/tools/dbg-*.png
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 日志与临时文件
+*.log
+*.tmp
+*~

@@ -1,0 +1,5 @@
+- insert:
+    - id: deepseek-wallpaper
+      name: '@local/deepseek-wallpaper'
+      config:
+        enabled: true

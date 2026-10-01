@@ -1,0 +1,16 @@
+import fs from 'node:fs'
+const p = process.argv[2]
+const fd = fs.openSync(p, 'r')
+const head = Buffer.alloc(32)
+fs.readSync(fd, head, 0, 32, 0)
+console.log('first 32 bytes:', head.toString('hex'))
+console.log('u32@0', head.readUInt32LE(0))
+console.log('u32@4', head.readUInt32LE(4))
+console.log('u32@8', head.readUInt32LE(8))
+const hs = head.readUInt32LE(4)
+const buf = Buffer.alloc(hs)
+fs.readSync(fd, buf, 0, hs, 8)
+console.log('u32@hdr0', buf.readUInt32LE(0))
+console.log('hdr[4..40]', buf.subarray(4, 40).toString('utf8'))
+console.log('hdr[8..44]', buf.subarray(8, 44).toString('utf8'))
+console.log('stat size', fs.fstatSync(fd).size)

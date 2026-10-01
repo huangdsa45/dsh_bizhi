@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="DeepSeek wallpaper">
+  <defs>
+    <linearGradient id="wp-sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2a5e"/>
+      <stop offset="1" stop-color="#0b1230"/>
+    </linearGradient>
+    <linearGradient id="wp-whale" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7fb4ff"/>
+      <stop offset="1" stop-color="#3d6ee8"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#wp-sea)"/>
+  <path d="M14 40c4.5 0 7.5-2.6 9.6-6 .6-1 1.9-1 2.5 0 2.1 3.4 5.1 6 9.6 6 5.6 0 9.9-4 12.4-9.4.4-.9 1.7-1 2.2-.1l2.1 4.2c.5 1 .2 2.2-.7 2.8-1 .7-2.5.2-2.9-.9l-.6-1.6C44.9 39.6 40 43 34 43c-4.9 0-8.6-2.3-11.1-5.5C20.4 40.7 17.4 43 14 43c-1.2 0-2-1-1.8-2.1.1-.6.6-1 1.2-1z" fill="url(#wp-whale)" opacity=".95"/>
+  <circle cx="24" cy="23" r="3.2" fill="#eaf2ff"/>
+  <circle cx="24" cy="23" r="1.5" fill="#12224d"/>
+  <path d="M33 18c3-3 7-4 10-3.2-2 1.4-3.2 3.2-3.6 5.2" fill="none" stroke="#7fb4ff" stroke-width="2" stroke-linecap="round"/>
+</svg>
